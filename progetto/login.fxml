@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="628.0" style="-fx-background-color: #083885;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.informatica.it.progetto.controllers.LoginController">
+   <children>
+      <TextField fx:id="email" layoutX="228.0" layoutY="203.0" prefHeight="25.0" prefWidth="190.0" promptText="Email" />
+      <PasswordField fx:id="password" layoutX="228.0" layoutY="281.0" prefHeight="25.0" prefWidth="190.0" promptText="Password" />
+      <Button fx:id="accedi" layoutX="244.0" layoutY="367.0" mnemonicParsing="false" onAction="#accedi_" prefHeight="47.0" prefWidth="114.0" style="-fx-background-color: #083885; -fx-border-color: fff;" text="Accedi" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="registrati" layoutX="481.0" layoutY="95.0" mnemonicParsing="false" onAction="#registrati_" prefHeight="43.0" prefWidth="113.0" style="-fx-background-color: #083885;" text="Registrati" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="password_nuova" layoutX="409.0" layoutY="471.0" mnemonicParsing="false" onAction="#reset" style="-fx-background-color: #083885;" text="Ho dimenticato la password" textFill="WHITE" />
+      <ImageView fitHeight="47.0" fitWidth="43.0" layoutX="143.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/account_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="101.0" layoutX="80.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/movie_projector_160px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="211.0" layoutY="60.0" prefHeight="47.0" prefWidth="198.0" text="Film Review" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="43.0" layoutX="130.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Password%20Key_32px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="675.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.informatica.it.progetto.controllers.recensioni.MatrixController">
+   <children>
+      <AnchorPane prefHeight="698.0" prefWidth="974.0" style="-fx-background-color: #083885;">
+         <children>
+            <AnchorPane layoutX="17.0" layoutY="68.0" prefHeight="540.0" prefWidth="206.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="80.0" prefHeight="64.0" prefWidth="182.0" text="Film Reviews" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="204.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="108.0" layoutY="194.0" mnemonicParsing="false" onAction="#home_" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="30.0" layoutY="291.0" text="Preferiti" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="108.0" layoutY="281.0" mnemonicParsing="false" onAction="#Preferiti" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/heart_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="17.0" layoutY="410.0" mnemonicParsing="false" onAction="#maps" prefHeight="47.0" prefWidth="173.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Cinema Vicino A Te" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="247.0" layoutY="87.0" prefHeight="540.0" prefWidth="694.0" style="-fx-background-color: #0763f7;">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="573.0" prefWidth="694.0">
+                     <children>
+                        <ImageView fitHeight="207.0" fitWidth="317.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Matrix.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea layoutX="29.0" layoutY="315.0" prefHeight="183.0" prefWidth="610.0" text="È tutto nel titolo. Matrix risorge. Due parole (nella versione originale è presente anche l'articolo ma cambia poco), soggetto e verbo, che fungono da mappa concettuale per quello che vuole essere il quarto capitolo della saga creata dalle sorelle Wachowski (ma qui co-scritto e diretto unicamente da Lana). Sono passati circa vent'anni da quando abbiamo salutato i corpi senz'anima dei due amanti Trinity e Neo. Vent'anni in cui Matrix (soggetto) non si è mai più palesato esplicitamente ma è sempre stato in qualche modo presente nell'immaginario popolare e non. [...]" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semibold Italic" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="27.0" layoutY="261.0" prefHeight="46.0" prefWidth="544.0" text="Matrix Resurrections di Lana Wachowski: e il verbo si fece carne" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="429.0" layoutY="516.0" text="di Simone Soranna Duels.it">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <WebView fx:id="WebView" layoutX="347.0" layoutY="19.0" prefHeight="234.0" prefWidth="332.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="67.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/movie_projector_160px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="425.0" layoutY="22.0" prefHeight="47.0" prefWidth="365.0" text="Matrix" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="820.0" layoutY="22.0" mnemonicParsing="false" onAction="#Fantascienza" prefHeight="32.0" prefWidth="121.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Fantascienza" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

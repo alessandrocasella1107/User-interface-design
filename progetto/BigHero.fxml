@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="675.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.informatica.it.progetto.controllers.recensioni.BigHeroController">
+   <children>
+      <AnchorPane prefHeight="698.0" prefWidth="974.0" style="-fx-background-color: #083885;">
+         <children>
+            <AnchorPane layoutX="17.0" layoutY="68.0" prefHeight="540.0" prefWidth="206.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="80.0" prefHeight="64.0" prefWidth="182.0" text="Film Reviews" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="204.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="108.0" layoutY="194.0" mnemonicParsing="false" onAction="#home_" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="30.0" layoutY="291.0" text="Preferiti" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="108.0" layoutY="281.0" mnemonicParsing="false" onAction="#Preferiti" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/heart_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="398.0" mnemonicParsing="false" onAction="#maps" prefHeight="47.0" prefWidth="173.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Cinema Vicino A Te" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="247.0" layoutY="87.0" prefHeight="540.0" prefWidth="694.0" style="-fx-background-color: #0763f7;">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="573.0" prefWidth="694.0">
+                     <children>
+                        <ImageView fitHeight="205.0" fitWidth="435.0" layoutX="18.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Big-Hero-6-968x640.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea layoutX="27.0" layoutY="316.0" prefHeight="183.0" prefWidth="609.0" text="Ora che possiede la casa dell'Uomo Ragno, non fa meraviglia se Disney Animation entra nell'universo Marvel adattando un fumetto che ricorda i Guardiani della Galassia e gli X-Men: collettivi di supereroi uniti contro il male. Hiro è un ragazzo prodigio esperto di robotica. Quando un nemico in maschera gli ruba la tecnologia per fare guai, Hiro costituisce un gruppo colorito di amici per fermarlo. L'ibridazione Disney/Marvel produce ulteriori ibridi: coniuga il repertorio di supereroi con quello di robot, ma ibrida anche l'estetica dell'animazione americana e quella del cartoon giapponese. Non a caso l'amabile Baymax ricorda Wall-E e il Totoro di Miyazaki in versione tecno (quanto al nome della città, San Fransokyo, parla da sé). Questa, del resto, è la qualità migliore del film, mentre i pur simpatici nerd del gruppo non sono nuovissimi, la storia vira gradualmente all'ennesima variazione supereroica e la Disney non si nega la dose di sentimentalismo che la caratterizza da sempre." wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semibold Italic" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="27.0" layoutY="261.0" prefHeight="46.0" prefWidth="533.0" text="&quot;È un personaggio della Disney ma ricorda i super eroi Marvel&quot;" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="429.0" layoutY="516.0" text="di Roberto Nepoti &quot;La Repubblica&quot;">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <WebView fx:id="WebView" layoutX="347.0" layoutY="18.0" prefHeight="234.0" prefWidth="332.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="67.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/movie_projector_160px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="425.0" layoutY="22.0" prefHeight="47.0" prefWidth="365.0" text="Big Hero 6" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="820.0" layoutY="22.0" mnemonicParsing="false" onAction="#Animazione" prefHeight="32.0" prefWidth="121.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Animazione" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.informatica.it.progetto.controllers.recensioni.OverboardController">
+   <children>
+      <AnchorPane prefHeight="698.0" prefWidth="974.0" style="-fx-background-color: #083885;">
+         <children>
+            <AnchorPane layoutX="17.0" layoutY="68.0" prefHeight="540.0" prefWidth="206.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="80.0" prefHeight="64.0" prefWidth="182.0" text="Film Reviews" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="204.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="108.0" layoutY="194.0" mnemonicParsing="false" onAction="#home_" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="30.0" layoutY="291.0" text="Preferiti" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="108.0" layoutY="281.0" mnemonicParsing="false" onAction="#Preferiti" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/heart_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="398.0" mnemonicParsing="false" onAction="#maps" prefHeight="47.0" prefWidth="173.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Cinema Vicino A Te" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="247.0" layoutY="87.0" prefHeight="540.0" prefWidth="694.0" style="-fx-background-color: #0763f7;">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="573.0" prefWidth="694.0">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="311.0" layoutX="14.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/0511ac6c474d498bf4421a6bb7f25ef2ceedb5f8c274da29d89b69e36253ccde._V_SX1080_.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea layoutX="27.0" layoutY="316.0" prefHeight="183.0" prefWidth="609.0" text="Fa da modello irraggiungibile la pièce &quot;Piccoli crimini coniugali&quot; di Eric-Emmanuel Schmitt (verrebbe da aggiungere &quot;dimenticate il brutto film di Alex Infascelli con Sergio Castellitto e Margherita Buy&quot;, ma l'hanno visto talmente in pochi che l'esortazione è superflua). Gilles ha perso la memoria, torna a casa dalla clinica con la moglie Lisa. Lei, amorevole, gli racconta come era la loro vita a due. Lui ascolta e cerca di adeguarsi all'immagine di marito modello. Finché un dubbio comincia a tormentarlo: &quot;Ma era davvero cosi? E Lisa è davvero mia moglie, o una sconosciuta che finge di esserlo?&quot; I dispetti tra coniugi erano irraggiungibili per scrittura e perfidia. [...]" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semibold Italic" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="27.0" layoutY="261.0" prefHeight="46.0" prefWidth="533.0" text="&quot;Un mare di amnesia&quot;" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="429.0" layoutY="516.0" text="di Mariarosa Mancuso &quot;Il Foglio&quot;">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <WebView fx:id="WebView" layoutX="338.0" layoutY="27.0" prefHeight="234.0" prefWidth="332.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="67.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/movie_projector_160px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="425.0" layoutY="22.0" prefHeight="47.0" prefWidth="365.0" text="Overboard" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="820.0" layoutY="22.0" mnemonicParsing="false" onAction="#Commedia" prefHeight="32.0" prefWidth="121.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Commedia" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

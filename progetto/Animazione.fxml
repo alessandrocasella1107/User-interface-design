@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="611.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.informatica.it.progetto.controllers.AnimazioneController">
+   <children>
+      <AnchorPane prefHeight="606.0" prefWidth="974.0" style="-fx-background-color: #083885;">
+         <children>
+            <AnchorPane layoutX="17.0" layoutY="68.0" prefHeight="540.0" prefWidth="206.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="80.0" prefHeight="64.0" prefWidth="182.0" text="Film Reviews" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#maps" prefHeight="47.0" prefWidth="173.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;" text="Cinema Vicino A Te" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Pane fx:id="pan" layoutX="3.0" layoutY="164.0" prefHeight="72.0" prefWidth="200.0" visible="false">
+                     <children>
+                        <Label layoutX="5.0" layoutY="13.0" prefHeight="47.0" prefWidth="190.0" text="Aggiunto ai preferiti!" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="438.0" layoutY="14.0" mnemonicParsing="false" onAction="#home_" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/home_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="350.0" layoutY="24.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="247.0" layoutY="87.0" prefHeight="525.0" prefWidth="673.0" style="-fx-background-color: #0763f7;">
+               <children>
+                  <ScrollPane layoutX="10.0" layoutY="9.0" prefHeight="516.0" prefWidth="659.0" style="-fx-background-color: #083885;">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="724.0" prefWidth="657.0" style="-fx-background-color: #0095ff;">
+                           <children>
+                              <AnchorPane layoutX="34.0" layoutY="21.0" prefHeight="212.0" prefWidth="234.0" style="-fx-background-color: #083885; -fx-background-radius: 10;">
+                                 <children>
+                                    <Button layoutX="42.0" layoutY="23.0" mnemonicParsing="false" onAction="#bighero_recensione" prefHeight="154.0" prefWidth="126.0" style="-fx-background-color: #083885; -fx-border-color: fff; -fx-border-radius: 10;" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="142.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/big-hero-6-teaser-i23279.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="177.0" layoutY="6.0" mnemonicParsing="false" onAction="#addPreferiti" prefHeight="34.0" prefWidth="42.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/plus_math_32px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Text fx:id="name" fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Big Hero 6" wrappingWidth="76.55029296875">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="370.0" layoutY="21.0" prefHeight="212.0" prefWidth="234.0" style="-fx-background-color: #083885; -fx-background-radius: 10;">
+                                 <children>
+                                    <Button layoutX="48.0" layoutY="23.0" mnemonicParsing="false" onAction="#luca_recensione" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #083885; -fx-border-color: fff; -fx-border-radius: 10;" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="142.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/84e7f9e17aab74ff3eeae9b023e0668f.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="177.0" layoutY="6.0" mnemonicParsing="false" onAction="#addPreferiti1" prefHeight="34.0" prefWidth="42.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/plus_math_32px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Text fx:id="name2" fill="WHITE" fontSmoothingType="LCD" layoutX="80.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luca" wrappingWidth="56.55029296875">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="34.0" layoutY="274.0" prefHeight="212.0" prefWidth="234.0" style="-fx-background-color: #083885; -fx-background-radius: 10;">
+                                 <children>
+                                    <Button layoutX="48.0" layoutY="23.0" mnemonicParsing="false" onAction="#incredibili_recensione" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #083885; -fx-border-color: fff; -fx-border-radius: 10;" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="142.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/incredibles_two_ver32-420x600.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="177.0" layoutY="6.0" mnemonicParsing="false" onAction="#addPreferiti2" prefHeight="34.0" prefWidth="42.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/plus_math_32px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Text fx:id="name3" fill="WHITE" fontSmoothingType="LCD" layoutX="62.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gli Incredibili" wrappingWidth="110.55029296875">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="370.0" layoutY="274.0" prefHeight="212.0" prefWidth="234.0" style="-fx-background-color: #083885; -fx-background-radius: 10;">
+                                 <children>
+                                    <Button layoutX="48.0" layoutY="23.0" mnemonicParsing="false" onAction="#spacejam_recensione" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #083885; -fx-border-color: fff; -fx-border-radius: 10;" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="142.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/3554046-space-jam-a-new-legacy.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="177.0" layoutY="6.0" mnemonicParsing="false" onAction="#addPreferiti3" prefHeight="34.0" prefWidth="42.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/plus_math_32px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Text fx:id="name4" fill="WHITE" fontSmoothingType="LCD" layoutX="63.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space Jam 2" wrappingWidth="88.0">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="67.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/movie_projector_160px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="746.0" layoutY="15.0" mnemonicParsing="false" onAction="#Preferiti" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #0763f7; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/heart_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="655.0" layoutY="25.0" text="Preferiti" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

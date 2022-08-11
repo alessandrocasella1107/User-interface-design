@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="241.0" prefWidth="414.0" style="-fx-background-color: #083885;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.informatica.it.progetto.controllers.ErroreController">
+   <children>
+      <Label layoutX="56.0" layoutY="48.0" prefHeight="91.0" prefWidth="302.0" text="Email e/o Password errati" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="Accedi" layoutX="41.0" layoutY="168.0" mnemonicParsing="false" onAction="#accedi" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #083885; -fx-border-color: fff;" text="Accedi" textFill="#fcfcfc">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="registrati" layoutX="213.0" layoutY="168.0" mnemonicParsing="false" onAction="#registrati" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #083885; -fx-border-color: fff;" text="Registrati" textFill="#fcfcfc">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
